@@ -1,7 +1,7 @@
 
 import Footer from "@/Components/Footer";
 import "./globals.css";
-import NavigationBar from "@/Components/navigationBar";
+import NavigationBar from "../../src/Components/NavigationBar.jsx";
 import Footers from "@/Components/Footers";
 
 
