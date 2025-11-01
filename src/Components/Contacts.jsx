@@ -25,7 +25,7 @@ const Contacts = () => {
             <div className='flex gap-4 '>
 
                   <div className='flex-1'>
-                    <label for="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
                         Name <span className="text-red-500">*</span>
                     </label>
                     <div className="relative">
@@ -35,7 +35,7 @@ const Contacts = () => {
                         <input 
                             type="text" 
                             id="name" 
-                            class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200" 
+                            className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200" 
                             placeholder="Enter your full name"
                             required
                         />
@@ -44,17 +44,17 @@ const Contacts = () => {
                 
              
                 <div className='flex-1'>
-                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
-                        Email <span class="text-red-500">*</span>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">
+                        Email <span className="text-red-500">*</span>
                     </label>
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <i class="fas fa-envelope text-gray-400"></i>
+                    <div className="relative">
+                        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i className="fas fa-envelope text-gray-400"></i>
                         </div>
                         <input 
                             type="email" 
                             id="email" 
-                            class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200" 
+                            className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200" 
                             placeholder="Enter your email address"
                             required
                         />
@@ -64,18 +64,18 @@ const Contacts = () => {
                 
               
                 <div>
-                    <label for="concern" class="block text-sm font-medium text-gray-700 mb-1">
+                    <label  className="block text-sm font-medium text-gray-700 mb-1">
                         What is your concern?
                     </label>
-                    <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                            <i class="fas fa-question-circle text-gray-400"></i>
+                    <div className="relative">
+                        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <i className="fas fa-question-circle text-gray-400"></i>
                         </div>
                         <select 
                             id="concern" 
-                            class="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 appearance-none bg-white"
+                            className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 appearance-none bg-white"
                         >
-                            <option value="" disabled selected>Select your concern</option>
+                            <option value="all" disabled selected>Select your concern</option>
                             <option value="general">General Inquiry</option>
                             <option value="support">Technical Support</option>
                             <option value="billing">Billing Issue</option>
@@ -83,7 +83,7 @@ const Contacts = () => {
                             <option value="other">Other</option>
                         </select>
                         <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-                            <i class="fas fa-chevron-down text-gray-400"></i>
+                            <i className="fas fa-chevron-down text-gray-400"></i>
                         </div>
                     </div>
                 </div>
@@ -111,10 +111,10 @@ const Contacts = () => {
                 <div>
                     <button 
                         type="submit" 
-                        class="w-34 bg-[#136afb] text-white py-3 px-4 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200 flex items-center justify-center"
+                        className="w-34 bg-[#136afb] text-white py-3 px-4 rounded-lg font-semibold hover:from-blue-700 hover:to-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-200 flex items-center justify-center"
                     >
                         <span>Submit</span>
-                        <i class="fas fa-paper-plane ml-2"></i>
+                        <i className="fas fa-paper-plane ml-2"></i>
                     </button>
                 </div>
             </form>
