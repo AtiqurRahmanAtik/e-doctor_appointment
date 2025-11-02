@@ -27,14 +27,14 @@ const WhyDocTime = () => {
     <section className="bg-white py-16">
 
         <div>
-            <Image className="lg:ml-40" src='/Images/doc2.png' alt="doc" width={720} height={600}/>
+            <Image className="lg:ml-40" src='/Images/c2.png' alt="doc" width={720} height={600}/>
         </div>
 
 
       <div className="max-w-5xl mx-auto px-4">
         
         {/* Subtitle */}
-        <p className="text-blue-600 font-normal text- mb-2">
+        <p className="text-blue-600 font-normal text-xl mb-2">
           Why DocTime?
         </p>
 

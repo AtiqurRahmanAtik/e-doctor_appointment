@@ -9,7 +9,7 @@ const Empower = () => {
         
           <div className='  py-10  my-8'>
                            <div className='lg:ml-44'>
-                               <Image src="/Images/e1.png" alt='medicin' width={620} height={600}/>
+                               <Image src="/Images/c3.png" alt='medicin' width={620} height={600}/>
                            </div>
                            
                

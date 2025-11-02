@@ -18,7 +18,7 @@ const MassMedia = () => {
                     <Image className='mb-4' src="/Images/prothom-alo-logo.png" alt='imag' width={120} height={200}/>
 
 
-                    <Image className='rounded-xl max-w-[420px] max-h-[400px]' src='/Images/prothon.png' alt='image' width={420} height={400} />
+                    <Image className='rounded-xl max-w-[420px] max-h-[400px]' src='/Images/c1.png' alt='image' width={420} height={400} />
 
                     <div>
                         <h2 className='my-3'>Sunday, 4 April, 2021</h2>

@@ -9,7 +9,7 @@ const HappyFamily = () => {
         
         <div className=' bg-[#eef7ff] py-10  my-8'>
                    <div className='lg:ml-44'>
-                       <Image src="/Images/Hppay.png" alt='medicin' width={620} height={600}/>
+                       <Image src="/Images/m11.jpg" alt='medicin' width={620} height={600}/>
                    </div>
                    
        

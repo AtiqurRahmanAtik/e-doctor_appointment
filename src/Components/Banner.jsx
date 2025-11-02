@@ -42,7 +42,7 @@ const Banner = () => {
         <SwiperSlide className="">
           <div>
             <Image
-              src="/Images/doctime-core-ap-southeast-1.s3.ap-southeast-1.amazonaws.com-....TO0en0.png"
+              src="/Images/ban1.png"
               alt="Banner 1"
               width={1020}
               height={320}
@@ -56,8 +56,8 @@ const Banner = () => {
         <SwiperSlide className="">
            <div>
             <Image
-              src="/Images/ezgif.com-webp-to-png-converter.png"
-              alt="Banner 1"
+              src="/Images/ban2.png"
+              alt="Banner 2"
               width={1020}
               height={320}
               className="mx-auto rounded-xl object-cover"

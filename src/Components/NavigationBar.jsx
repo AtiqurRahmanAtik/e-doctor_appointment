@@ -3,22 +3,29 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
 
 const NavigationBar = () => {
 
 
     const PagesLinks = <>
-       <li className='text-xl'><a>Consultation</a></li>
-      <li className='text-xl'><a>Order Medicine</a></li>
-      <li className='text-xl'><a>Home Diagnostic</a></li>
-      <li className='text-xl'><a>Health Plan</a></li>
+       <Link href="/consultation" className='text-xl  hover:text-[#136afb]'>Consultation</Link>
+
+    
+      <Link href='/homeDiagnostic' className='text-xl hover:text-[#136afb]'>Home Diagnostic</Link>
+
+      <Link href='/healthPlan' className='text-xl hover:text-[#136afb]'>Health Plan</Link>
+
 
       <li >
         <details>
-          <summary className='text-xl'>Blogs</summary>
-          <ul className="p-2">
-            <li className='text-xl'><a>English</a></li>
-            <li className='text-xl'><a>বাংলা</a></li>
+        <summary href='/blogs/english' className='text-xl lg:-mt-2 hover:text-[#136afb]'>Blogs</summary> 
+
+          <ul className="p-2 flex gap-2 flex-col z-20">
+           <Link href='/blogs/english' className='text-xl hover:text-[#136afb]'>English</Link>
+
+            <Link href='/blogs/bangla' className='text-xl hover:text-[#136afb]'>বাংলা</Link>
+
           </ul>
         </details>
       </li>
@@ -26,12 +33,12 @@ const NavigationBar = () => {
      
       <li>
         <details>
-          <summary className='text-xl'>More   </summary>
-          <ul className="p-2">
-            <li className='text-xl'><a>For Doctor</a></li>
-            <li className='text-xl'><a>Care Global</a></li>
-            <li className='text-xl'><a>Employers & NGO's</a></li>
-            <li className='text-xl'><a>Contact Us</a></li>
+          <summary className='text-xl lg:-mt-2 hover:text-[#136afb]'>More   </summary>
+          <ul className="p-2 z-30 lg:min-w-48">
+            <li className='text-xl hover:text-[#136afb]'><a>For Doctor</a></li>
+            <li className='text-xl hover:text-[#136afb]'><a>Care Global</a></li>
+            <li className='text-xl hover:text-[#136afb]'><a>Employers & NGO's</a></li>
+            <li className='text-xl hover:text-[#136afb]'><a>Contact Us</a></li>
           </ul>
         </details>
       </li>
@@ -61,21 +68,22 @@ const NavigationBar = () => {
     </div>
     {/* <a className=" bg-ghost text-2xl font-bold"><span className='space-x-0 text-[#136afb]'>Doc</span>Time</a> */}
 
-    <Image src='/Images/doctime-logo.png' alt="icon" width={120} height={80}/>
+    <Link href="/"> <Image  src='/Images/doctime-logo.png' alt="icon" width={120} height={80}/></Link>
   </div>
 
 
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1  border border-r-2 border-gray-200">
+  <div className="navbar-center hidden lg:flex ">
+    <ul className="menu menu-horizontal px-1 space-x-6 ">
      
           {PagesLinks}
 
     </ul>
   </div>
 
-  <div className="navbar-end mr-4">
-    <a className="btn py-1  bg-[#136afb] text-2xl text-white">Log in <IoIosArrowForward className="text-2xl"></IoIosArrowForward></a>
+  <div className="navbar-end  mr-4">
+    <Link href='/login' className="btn py-4   bg-[#136afb] text-xl  text-white">Log in <IoIosArrowForward className="text-2xl"></IoIosArrowForward></Link>
   </div>
+
 </nav>
   );
 };

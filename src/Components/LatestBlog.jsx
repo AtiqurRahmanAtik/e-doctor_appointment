@@ -24,7 +24,7 @@ Health Experts</h1>
                                               
                             
                             
-                <Image className='rounded-xl max-w-[340px] max-h-[380px] hover:scale-110 hover:transition delay-150 duration-300 ease-in-out' src='/Images/dos.png' alt='image' width={420} height={400} />
+                <Image className='rounded-xl max-w-[340px] max-h-[380px] hover:scale-110 hover:transition delay-150 duration-300 ease-in-out' src='/Images/c8.png' alt='image' width={420} height={400} />
 
                             
                    <div>
